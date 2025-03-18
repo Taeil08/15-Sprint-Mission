@@ -12,7 +12,7 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
 
     />
-    <link rel="stylesheet" href="./style/sign-in.css" />
+    <link rel="stylesheet" href="./style/signup.css" />
   </head>
   <body>
     <div class="login-container">
@@ -27,10 +27,21 @@
             <input type="email" id="email" name="email">
           </div>
           <div class="group">
+            <label for="username">닉네임</label>
+            <input type="username" id="username" name="username">
+          </div>
+          <div class="group">
             <label for="password">비밀번호</label>
             <div class="password-input">
-              <input type="password" id="password" name="password">
-              <img src="./image/invisible_icon.png" class="password-icon" alt="비밀번호 보기">
+            <input type="password" id="password" name="password">
+            <img src="./image/invisible_icon.png" class="password-icon" alt="비밀번호 보기">
+           </div>
+          </div>
+           <div class="group">
+            <label for="password-repeat">비밀번호 확인</label>
+             <div class="password-input">
+              <input id="password-repeat" name="password-repeat">
+             <img src="./image/eye_icon.png" class="password-icon" alt="비밀번호 보기">
              </div>
           </div>
             <button type="submit">로그인</button>
@@ -39,7 +50,6 @@
           <div class="bottom">
             <div class="input-bottom">
             <h1>간편 로그인하기</h1>
-           </div>
             <div class="social">
             <a href="https://www.google.co.kr/?hl=ko" target="blank">
               <img src="./image/google.png">
@@ -48,11 +58,11 @@
               <img src="./image/kakaotalk.png">
             </a>
           </div>
-          
+        </div>
           </div>
           <div class="footer">
              <h1>판다마켓이 처음이신가요?</h1>
-             <a href="./signup.html">회원가입</a>
+             <a href="./sign-in.html">로그인</a>
           </div>
           
         
