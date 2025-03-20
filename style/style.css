@@ -1,20 +1,28 @@
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
   }
+  body{
+    width:1920px;
+    
+  }
   .title {
+    position: fixed;
     align-items: center;
     display:flex;
     height: 70px;
     border-bottom: 1px solid #DFDFDF;
-    padding:9px 400px;
+    padding:9px 200px;
     gap:10px;
     justify-content: space-between;
-    width:1920px;
+    width:100%;
+    z-index: 120;
+    background-color: #FFFFFF;
+    
   }
-   /* 판다로고 */
+  
   .logo {
     width: 150px;
     height: auto;
@@ -33,41 +41,48 @@
   }
     
 .container0{ 
+    position: relative;
     display:flex;
-    width:1920px;
     height:540px;
-    gap:10px;
-    padding:138px 466px;
+    top:70px;
     justify-content: space-around;
-    align-items: center;   
+    align-items: end;
     background-color: #CFE5FF;
+    
 }
+
   .inner_box0{
-  display: flex;
-  align-items: center;
-  margin-top:0;
   width:1110px;
   height: 340px;
-  margin-top:200px;
+  display: flex;
+  align-items: center;
+  top:200px;
+  left:405px;
+  gap:7px;
+  
   } 
+  
    .inner_box0 a{
     text-decoration: none;
    }
   
  .text-box0{
-    width:357;
-    height:260;
+    display: flex;
+    width:357px;
+    height:260px;
     padding-bottom: 60px;
     gap:32px;
  }
- h1{
+ .text-box0 h{
+    width: 295px;
+    height: 112px;
     font-weight:700;
     font-size:40px;
     line-height: 56px;
     letter-spacing:2%;
 
 }
-  /* 구경하러가기 */
+ 
 .see{
     width:357;
     height:56px;
@@ -76,15 +91,27 @@
     background-color:#3692FF ;
     color:#F9FAFB;
     padding:16px 124px;
+    margin:46px 0;
     gap:10px;
     white-space: nowrap;
 }
-.contents0{
-  width: 746px;
-  height: 340px;
+.see p {
+  width:109px;
+  height: 32px;
+  font-family: Pretendard;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
 
 }
 
+.contents0 img{
+  width: 746px;
+  height: 340px;
+}
 
 .container1{
     display:flex;
@@ -111,10 +138,20 @@
 .text-box{
     width:298px;
     height:238px;
-    /* padding-right: 24px; */
     gap:12px;
     margin-right:24px;
 
+
+}
+.text-box h1{
+  width:222px;
+  height: 112px;
+  font-family: Pretendard;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  vertical-align: middle;
 
 }
 .hot-item{
@@ -122,6 +159,7 @@
    line-height: 26px;
    color:#3692FF;
    font-weight:700; 
+   margin-bottom:-12px;
 }
 
 .description{
@@ -140,6 +178,18 @@
     gap:12px;
     
 }
+.text-box2 h1{
+  width: 293px;
+  height: 112px;
+  font-family: Pretendard;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  text-align: right;
+  vertical-align: middle;
+
+}
 
 .text-box3{
     width:359px;
@@ -151,7 +201,19 @@
     font-weight: 700;
     font-size:18px;
     line-height: 26px;
+    color: #3692FF;
+    margin-bottom: -16px;
     
+}
+.text-box3 h1{
+  width: 293px;
+  height: 112px;
+  font-family: Pretendard;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  vertical-align: middle;
 }
 .container2{ 
   display: flex;
@@ -195,7 +257,7 @@
 
 .content-bottom img{
     width:746px;
-    height: 397px;
+    height: 393px;
     margin-right: 80px;
     
 }
@@ -208,28 +270,25 @@
   gap:10px;
   justify-content: space-between;
   background-color: #111827;
-  align-items: center;
+  
 }
 .inner_box2{
   display: flex;
   width: 1120px;
   height: 20px;
   justify-content: space-between;
-  display: flex;
-  margin-right: -50px;
-  margin-top:-80px;
-  
+  align-items: center;
+ 
   
 }
 .copyright{
+  display: flex;
   width: 112px;
-  height: 19px;
   font-weight: 400;
   font-size:16px;
-  line-height: 19.09px;
   letter-spacing: 0%;
-  text-align: center;
   color: #9CA3AF;
+ 
 }
 
 .links{
@@ -256,8 +315,9 @@
   height: 20px;
   gap:12px;
 }
-.social_img a{
+.social_img img{
   width: 20px;
   height: 20px;
   
 }
+
